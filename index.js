@@ -27,7 +27,6 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-
 app.post("/api/users", async (req, res) => {
     try {
         const { name, email, age, gender } = req.body;
